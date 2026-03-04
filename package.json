@@ -1,0 +1,44 @@
+{
+  "name": "tourist-companion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed:hotels": "node seed-hotels.mjs",
+    "seed:activities": "node seed-activities.mjs",
+    "seed:restaurants": "node seed-restaurants.mjs",
+    "seed:stories": "node seed-travel-stories.mjs",
+    "seed:all": "node seed-hotels.mjs && node seed-activities.mjs && node seed-restaurants.mjs && node seed-travel-stories.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.7.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.0",
+    "next": "14.2.7",
+    "next-auth": "^4.24.7",
+    "next-cloudinary": "^6.11.0",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0-rc2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/react": "^18.3.5",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
